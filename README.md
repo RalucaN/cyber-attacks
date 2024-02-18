@@ -30,32 +30,33 @@ To install and use this project, you need to have the following prerequisites:
 ## Project timeline
 The project timeline is as follows:
 
-```
+``` mermaid
 gantt
         dateFormat YYYY-MM-DD
-        title Project timeline
-        section Data source selection and inspection
-        Choose a data source :done, 2024-02-18, 1d
-        Download or access the data source :done, 2024-02-19, 1d
-        Inspect the data quality, size, and format :done, 2024-02-20, 1d
-        Perform preliminary data cleaning and preprocessing :done, 2024-02-21, 1d
+        title Cybersecurity Breaches Analysis Project Timeline
+        section Data Collection & EDA
+                Planning :2024-02-15, 3d
+                Choose a data source :active, 2024-02-18, 1d
+                Download or access the data source :active, 2024-02-18, 1d
+                Inspect the data quality, size, and format :active, 2024-02-19, 1d
+                Perform data cleaning and preprocessing :active, 2024-02-19, 1d
         section Cloud and IaC setup
-        Choose a cloud platform and an IaC tool :done, 2024-02-24, 1d
-        Create and configure the cloud resources :done, 2024-02-25, 1d
+                Choose a cloud platform and an IaC tool :after, 2024-02-20, 3d
+                Create and configure the cloud resources :after, 2024-02-23, 3d
         section Data lake pipeline
-        Design and implement the data lake pipeline :done, 2024-02-26, 2d
-        Test and debug the data lake pipeline :done, 2024-02-28, 1d
+                Design and implement the data lake pipeline :after, 2024-02-26, 6d
+                Test and debug the data lake pipeline :after, 2024-03-03, 1d
         section Data warehouse pipeline
-        Design and implement the data warehouse pipeline :done, 2024-03-01, 2d
-        Test and debug the data warehouse pipeline :done, 2024-03-03, 1d
+                Design and implement the data warehouse pipeline :after, 2024-03-04, 7d
+                Test and debug the data warehouse pipeline :after, 2024-03-11, 1d
         section Data transformation
-        Design and implement the data transformation :done, 2024-03-04, 2d
-        Test and debug the data transformation :done, 2024-03-06, 1d
+                Design and implement the data transformation :after, 2024-03-12, 7d
+                Test and debug the data transformation :after, 2024-03-19, 1d
         section Dashboard creation
-        Design and implement the dashboard :done, 2024-03-08, 2d
-        Test and debug the dashboard :done, 2024-03-10, 1d
-        section Documentation and presentation
-        Write the readme and other documentation :active, 2024-03-11, 2d
-        Prepare and deliver the presentation : 2024-03-15, 2d
+                Design and implement the dashboard :after, 2024-03-20, 7d
+                Test and debug the dashboard :after, 2024-03-27, 1d
+        section Documentation and review
+                Write the readme and other documentation :after, 2024-03-28, 2d
+                Final review and submission :after, 2024-03-29, 2d
 
 ```
