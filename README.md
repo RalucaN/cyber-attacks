@@ -1,18 +1,31 @@
-# Cybersecurity Breaches Analysis
-This is a data engineering project that creates an end-to-end data pipeline to ingest, process, store, and visualize data on cybersecurity breaches reported by different entities. The project uses various cloud, IaC, workflow orchestration, data warehouse, and visualization tools to build a dashboard that shows the trends and patterns of cybersecurity breaches across different sectors and regions.
+# Cyber Attacks Analysis
+
+This project leverages the [**University of Maryland CISSM Cyber Attacks Database**](https://cissm.liquifiedapps.com/) to create an end-to-end data engineering pipeline to ingest, process, store, and visualize data on cybers attacks around the world between 2014 and 2023. It uses various cloud, IaC, workflow orchestration, data warehouse, and visualization tools to build a dashboard that shows the trends and patterns of cyber events breaches across different sectors and regions.
+
+CISSM dataset compiles open-source information related to a wide range of publicly acknowledged cyber events affecting both private and public organizations. This database covers events from 2014 to the present and provides standardized information on various aspects of each attack, including:
+
+- *Threat Actors*: Identifying the entities responsible for the attacks.
+- *Threat Actor Countries*: Understanding the geographical origins of these actors.
+- *Motives*: Investigating the reasons behind the attacks.
+- *Targets*: Identifying the specific organizations or systems affected.
+- *Industries*: Categorizing attacks based on the affected sectors.
+- *Location*: Analyzing the global reach of these incidents.
+
+Please check the [Cyber Events Database Codebook](https://cissm.umd.edu/sites/default/files/2023-03/Cyber%20Events%20Database%20Codebook.pdf) for more information about the data collection, validation and coding process.
 
 
 ## Why this project?
-Cybersecurity is a crucial and challenging domain that affects many aspects of our society and economy. Cybersecurity breaches can have severe consequences for individuals, organizations, and governments, such as data loss, identity theft, financial damage, reputational harm, or even physical harm. Therefore, it is important to understand the nature, causes, and impacts of cybersecurity breaches, and to develop effective strategies and solutions to prevent, detect, and mitigate them.
+Cybers attacks pose significant risks to individuals, organizations, and society at large. By analyzing attack data comprehensively, we can enhance our understanding of these threats and develop effective strategies to prevent, detect, and respond to cyber incidents. The insights gained from this project will contribute to a safer digital environment.
 
+The project aims to answer the following research question: *What are the common attack vectors used by threat actors in different industries, and how do these vectors evolve over time and space?*
 
-This project aims to provide a comprehensive and interactive analysis of cybersecurity breaches data, using data engineering and data visualization techniques. The project will help users to explore and answer questions such as:
-
-- How many cybersecurity breaches have occurred over time, and what are the main types and sources of breaches?
-- Which industries and regions are most affected by cybersecurity breaches, and what are the average costs and impacts of breaches for each sector and area?
-- How can we identify and classify anomalous or suspicious cybersecurity events, and what are the best practices to respond to them?
-- How can we improve the security and resilience of our systems and networks, and what are the emerging trends and challenges in cybersecurity?
-
+To address this research question, we will follow these steps:
+- **Data Ingestion and Standardization**: Develop an end-to-end data pipeline to ingest, process, and standardize the information from the CISSM Cyber Attacks Database.
+- **Exploratory Data Analysis (EDA)**: Conduct thorough exploratory analysis to uncover patterns, trends, and anomalies within the attack data
+   - Temporal Trends: Investigate how the frequency and severity of attacks have evolved over time.
+   - Geospatial Analysis: Map attack incidents to understand their global distribution.
+   - Sector-Specific Insights: Analyze attack impact across different industries.
+- Visualization and Dashboard Creation: Utilize data visualization tools to create an interactive dashboard that allows users to explore attack-related insights
 
 ## How to install and use this project?
 To install and use this project, you need to have the following prerequisites:
@@ -33,7 +46,7 @@ The project timeline is as follows:
 ``` mermaid
 gantt
         dateFormat YYYY-MM-DD
-        title Cybersecurity Breaches Analysis Project Timeline
+        title Cyber Attacks Analysis Project Timeline
         section Data Collection & EDA
                 Planning :2024-02-15, 3d
                 Choose a data source :active, 2024-02-18, 1d
@@ -60,3 +73,5 @@ gantt
                 Final review and submission :after, 2024-03-29, 2d
 
 ```
+## Citations/Links
+CISSM dataset: Harry, C., & Gallagher, N. (2018). Classifying cyber events. Journal of Information Warfare, 17(3), 17-31.
