@@ -1,0 +1,2 @@
+curl "https://cissm.liquifiedapps.com/api/" > events.json
+curl "https://cissm.liquifiedapps.com/api/?type=actors" > actors.json
